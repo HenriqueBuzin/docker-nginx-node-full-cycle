@@ -1,0 +1,11 @@
+{
+    "name": "nodeapp",
+    "version": "1.0.0",
+    "description": "Node.js app for proxy challenge",
+    "main": "index.js",
+    "dependencies": {
+      "express": "^4.17.1",
+      "mysql2": "^3.9.1"
+    }
+  }
+  
