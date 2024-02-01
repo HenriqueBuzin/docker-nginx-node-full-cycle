@@ -11,8 +11,13 @@ services:
 
   nodeapp:
     build: .
+    volumes:
+      - .:/usr/src/app
+      - node_modules:/usr/src/app/node_modules
     depends_on:
       - mysql
+    ports:
+      - "3000:3000"
 
   mysql:
     image: mysql:8.3
@@ -27,3 +32,4 @@ services:
 
 volumes:
   db-data:
+  node_modules:
